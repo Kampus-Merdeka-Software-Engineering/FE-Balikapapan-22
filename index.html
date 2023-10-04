@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProjectCapstone</title>
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="overlay" data-overlay></div>
+    <div class="header-top">
+      <div class="container">
+        <a href="https://wa.me/6285377955384" class="helpline-box">
+
+          <div class="icon-box">
+            <ion-icon name="logo-whatsapp"></ion-icon>
+          </div>
+
+          <div class="wrapper">
+            <p class="helpline-title">For Further Inquires :</p>
+            <p class="helpline-number">click here</p>
+          </div>
+        </a>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logoGoship.jpeg" alt="Go-Ship">
+        </a>
+
+        <div class="header-btn-group">
+          <button class="search-btn" aria-label="Search">
+            <ion-icon name="search"></ion-icon>
+          </button>
+
+          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+        <ul class="social-list">
+          <li>
+            <a href="https://instagram.com/kampusmerdeka.ri?igshid=MWZjMTM2ODFkZg==" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="mailto:kampusmerdeka.kemdikbud.go.id" class="social-link">
+              <ion-icon name="mail"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@revoudotco" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="#" class="logo">
+              <img src="./assets/images/logoGoship.jpeg" alt="Goship logo">
+            </a>
+
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="#home" class="navbar-link" data-nav-link>home</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link" data-nav-link>about us</a>
+            </li>
+
+            <li>
+              <a href="#servicesss" class="navbar-link" data-nav-link>service</a>
+            </li>
+
+            <li>
+              <a href="#team" class="navbar-link" data-nav-link>our team</a>
+            </li>
+
+            <li>
+              <a href="#gallery" class="navbar-link" data-nav-link>testimoni</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link" data-nav-link>contact us</a>
+            </li>
+
+          </ul>
+        </nav>
+
+        <button class="btn btn-primary" onclick="redirectToWhatsApp()">Join Us</button>
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <!-- 
+        - #HERO
+      -->
+      <section class="hero" id="home">
+        <div class="container">
+          <h2 class="h1 hero-title">GO-SHIP</h2>
+
+          <p class="hero-text">
+            Go Shipping is a company that offers tracking and package delivery
+            services throughout Indonesia so that
+            customers can monitor the status of their shipments online.
+          </p>
+
+          <div class="btn-group">
+            <button class="btn btn-primary" onclick="openPopup()">More Info</button>
+            <div class="popupcontainer" id="popupmore">
+              <img src="assets/images/404-tick.png">
+              <h2>GO-SHIP</h2>
+              <p>Welcome to GO-SHIP, your trusted partner in shipping and delivery services across Indonesia. At
+                GO-SHIP, we understand the importance of timely and reliable package delivery, and we are committed to
+                providing top-notch services to meet your shipping needs.</p>
+
+              <h3>Our Services</h3>
+              <p>GO-SHIP specializes in tracking and package delivery services that cover the entire expanse of
+                Indonesia. Whether you're sending parcels for personal or business purposes, our dedicated team ensures
+                that your packages reach their destination safely and on time.</p>
+
+              <h3>Online Shipment Tracking</h3>
+              <p>One of our key features is the ability to track your shipments online. We offer a user-friendly online
+                tracking system that allows you to monitor the status of your packages in real-time. Stay informed about
+                the journey of your shipments from pick-up to delivery, giving you peace of mind and control over your
+                logistics.</p>
+
+              <h3>Nationwide Coverage</h3>
+              <p>GO-SHIP provides nationwide delivery services, reaching various regions and cities across Indonesia.
+                Our extensive network allows us to serve customers in both urban and remote areas, ensuring that
+                everyone can benefit from our reliable shipping solutions.</p>
+
+              <h3>Customer Satisfaction</h3>
+              <p>At GO-SHIP, we prioritize customer satisfaction. Our customer-centric approach means that we go the
+                extra mile to meet your expectations. We understand that each shipment is important, and we strive to
+                provide excellent service at every step of the shipping process.</p>
+
+              <h3>Experience the Convenience</h3>
+              <p>Experience the convenience of shipping with GO-SHIP. Whether you're a business looking for a reliable
+                shipping partner or an individual sending a gift to a loved one, we are here to make your shipping
+                experience smooth and hassle-free. Trust GO-SHIP for all your shipping needs.</p>
+              <button type="button" onclick="closePopup()">Close</button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #RESI SEARCH (CEK RESI)
+      -->
+
+      <section class="resi-search">
+        <div class="container">
+          <form action="" class="resi-search-form">
+            <div class="input-wrapper">
+              <label for="servicesss" class="input-label">Receipt Number*</label>
+              <input type="text" name="servicesss" id="servicesss" required placeholder="masukkan resi"
+                class="input-field">
+            </div>
+
+            <button type="submit" class="btn btn-secondary">check</button>
+          </form>
+        </div>
+      </section>
+
+      <div class="section-spacing"></div>
+
+      <!-- 
+        - #ONGKIR SEARCH (CEK ONGKIR)
+      -->
+      <section class="ongkir-search">
+        <div class="container">
+          <form action="" class="ongkir-search-form">
+            <div class="input-wrapper">
+              <label for="servicesss" class="input-label">Asal*</label>
+              <select name="servicesss" id="servicesss" required class="input-field">
+                <option value="">Masukkan Kota/Kab Asal</option>
+                <option value="Asal A">Jakarta</option>
+                <option value="Asal B">Bandung</option>
+                <option value="Asal C">Semarang</option>
+              </select>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="servicesss" class="input-label">Tujuan*</label>
+              <select name="servicesss" id="servicesss" required class="input-field">
+                <option value="">Masukkan Kota/Kab Tujuan</option>
+                <option value="Asal A">Jakarta</option>
+                <option value="Asal B">Bandung</option>
+                <option value="Asal C">Semarang</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-secondary">check</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- 
+        - #POPULAR
+      -->
+      <section class="popular" id="servicesss">
+        <div class="container">
+          <p class="section-subtitle">go-ship</p>
+          <h2 class="h2 section-title">our services</h2>
+
+          <p class="section-text">
+            Go-Ship is your reliable partner for package forwarding service
+            from every city in Indonesia. Check your package here!
+          </p>
+
+          <ul class="popular-list">
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img src="./assets/images/cekresi.png" alt="San miguel, italy" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">Services 1</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Cek Resi</a>
+                  </h3>
+
+                  <!-- <p class="card-text">
+                    Penjelasan mengenai cek resi
+                  </p> -->
+
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img src="./assets/images/gosipservices.png" alt="Burj khalifa, dubai" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">Our Company</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Go-Ship</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Go Shipping is a company that offers tracking and package
+                    delivery services throughout Indonesia so that
+                    customers can monitor the status of their shipments online.
+                  </p>
+
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img src="./assets/images/cekongkir.jpg" alt="Burj khalifa, dubai" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">Services 2</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Cek Ongkir</a>
+                  </h3>
+
+                  <!-- <p class="card-text">
+                    Penjelasan
+                  </p> -->
+
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 
+        - #TEAM
+      -->
+
+      <section class="team" id="team">
+        <div class="container">
+          <p class="section-subtitle">group 22</p>
+          <h2 class="h2 section-title">OUR TEAM</h2>
+
+          <p class="section-text">
+            Introduce us from Team K Group 22. In this group there are 6 members who come from different campuses and
+            have different origins.
+          </p>
+
+          <ul class="team-list">
+            <!-- Anggota 1 -->
+            <li>
+              <div class="team-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/salsa.jpg" alt="Experience The Great Holiday On Beach" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">salsa</h3>
+
+                  <p class="card-text">
+                    Saya adalah seorang profesional di bidang Teknik Informatika dengan latar belakang pendidikan
+                    sarjana. Selama lima tahun terakhir, saya telah mendedikasikan diri untuk dunia pengembangan
+                    perangkat lunak di perusahaan IT terkemuka.
+
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+                        <p class="text">Universitas Baturaja</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="card-position">
+                  <div class="wrapper">
+                    <p class="reviews">Team Leader</p>
+                  </div>
+                  <ul>
+
+                    <li class="contact-item">
+                      <ion-icon name="logo-whatsapp"></ion-icon>
+                      <a href="https://wa.me/6285378555384" class="contact-link">+6285377555383</a>
+                    </li>
+
+                    <li class="contact-item">
+                      <ion-icon name="mail-outline"></ion-icon>
+                      <a href="mailto:kampusmerdeka.kemdikbud.go.id"
+                        class="contact-link">kampusmerdeka.kemdikbud.go.id</a>
+                    </li>
+
+                    <li class="contact-item">
+                      <ion-icon name="logo-instagram"></ion-icon>
+                      <a href="https://instagram.com/kampusmerdeka.ri?igshid=MWZjMTM2ODFkZg=="
+                        class="contact-link">salsa</a>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <!-- Anggota 2 -->
+            <li>
+              <div class="team-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/fotoelal.jpeg" alt="Experience The Great Holiday On Beach" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">ailal hamdi basri</h3>
+
+                  <p class="card-text">
+                    Saya adalah seorang profesional di bidang Teknik Informatika dengan latar belakang pendidikan
+                    sarjana. Selama lima tahun terakhir, saya telah mendedikasikan diri untuk dunia pengembangan
+                    perangkat lunak di perusahaan IT terkemuka.
+
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+                        <p class="text">Universitas Telkom</p>
+                      </div>
+                    </li>
+                  </ul>
+
+                </div>
+                <div class="card-position">
+                  <div class="wrapper">
+                    <p class="reviews">Front-End</p>
+                  </div>
+
+                  <ul>
+                    <li class="contact-item">
+                      <ion-icon name="logo-whatsapp"></ion-icon>
+                      <a href="https://wa.me/6285377555383" class="contact-link">+6285377555383</a>
+                    </li>
+
+                    <li class="contact-item">
+                      <ion-icon name="mail-outline"></ion-icon>
+                      <a href="mailto:kampusmerdeka.kemdikbud.go.id"
+                        class="contact-link">kampusmerdeka.kemdikbud.go.id</a>
+                    </li>
+
+                    <li class="contact-item">
+                      <ion-icon name="logo-instagram"></ion-icon>
+                      <a href="https://instagram.com/kampusmerdeka.ri?igshid=MWZjMTM2ODFkZg=="
+                        class="contact-link">ailalhmdbasri</a>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <!-- Anggota 3 -->
+            <li>
+              <div class="team-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/frili.JPG" alt="Experience The Great Holiday On Beach" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">frili</h3>
+
+                  <p class="card-text">
+                    Saya adalah seorang profesional di bidang Teknik Informatika dengan latar belakang pendidikan
+                    sarjana. Selama lima tahun terakhir, saya telah mendedikasikan diri untuk dunia pengembangan
+                    perangkat lunak di perusahaan IT terkemuka.
+
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+                        <p class="text">Universitas Diponegoro</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="card-position">
+                  <div class="wrapper">
+                    <p class="reviews">Front-end</p>
+                  </div>
+
+                  <ul>
+                    <li class="contact-item">
+                      <ion-icon name="logo-whatsapp"></ion-icon>
+                      <a href="https://wa.me/6285377555383" class="contact-link">+6285377555383</a>
+                    </li>
+
+                    <li class="contact-item">
+                      <ion-icon name="mail-outline"></ion-icon>
+                      <a href="mailto:kampusmerdeka.kemdikbud.go.id"
+                        class="contact-link">kampusmerdeka.kemdikbud.go.id</a>
+                    </li>
+
+                    <li class="contact-item">
+                      <ion-icon name="logo-instagram"></ion-icon>
+                      <a href="https://instagram.com/kampusmerdeka.ri?igshid=MWZjMTM2ODFkZg=="
+                        class="contact-link">frili</a>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <!-- Anggota 4 -->
+            <li>
+              <div class="team-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/sarah.jpg" alt="Experience The Great Holiday On Beach" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">sarah</h3>
+
+                  <p class="card-text">
+                    Saya adalah seorang profesional di bidang Teknik Informatika dengan latar belakang pendidikan
+                    sarjana. Selama lima tahun terakhir, saya telah mendedikasikan diri untuk dunia pengembangan
+                    perangkat lunak di perusahaan IT terkemuka.
+
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+                        <p class="text">Institut Teknologi Bandung</p>
+                      </div>
+                    </li>
+                  </ul>
+
+                </div>
+                <div class="card-position">
+                  <div class="wrapper">
+                    <p class="reviews">Back-end</p>
+                  </div>
+
+                  <ul>
+                    <li class="contact-item">
+                      <ion-icon name="logo-whatsapp"></ion-icon>
+                      <a href="https://wa.me/6285377555383" class="contact-link">+6285377555383</a>
+                    </li>
+
+                    <li class="contact-item">
+                      <ion-icon name="mail-outline"></ion-icon>
+                      <a href="mailto:kampusmerdeka.kemdikbud.go.id"
+                        class="contact-link">kampusmerdeka.kemdikbud.go.id</a>
+                    </li>
+
+                    <li class="contact-item">
+                      <ion-icon name="logo-instagram"></ion-icon>
+                      <a href="https://instagram.com/kampusmerdeka.ri?igshid=MWZjMTM2ODFkZg=="
+                        class="contact-link">sarah</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <!-- Anggota 5 -->
+            <li>
+              <div class="team-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/nadia.JPG" alt="Experience The Great Holiday On Beach" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">nadia</h3>
+
+                  <p class="card-text">
+                    Saya adalah seorang profesional di bidang Teknik Informatika dengan latar belakang pendidikan
+                    sarjana. Selama lima tahun terakhir, saya telah mendedikasikan diri untuk dunia pengembangan
+                    perangkat lunak di perusahaan IT terkemuka.
+
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+                        <p class="text">Universitas Indonesia</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="card-position">
+                  <div class="wrapper">
+                    <p class="reviews">Back-end</p>
+                  </div>
+
+                  <ul>
+                    <li class="contact-item">
+                      <ion-icon name="logo-whatsapp"></ion-icon>
+                      <a href="https://wa.me/6285377555383" class="contact-link">+6285377555383</a>
+                    </li>
+
+                    <li class="contact-item">
+                      <ion-icon name="mail-outline"></ion-icon>
+                      <a href="mailto:kampusmerdeka.kemdikbud.go.id"
+                        class="contact-link">kampusmerdeka.kemdikbud.go.id</a>
+                    </li>
+
+                    <li class="contact-item">
+                      <ion-icon name="logo-instagram"></ion-icon>
+                      <a href="https://instagram.com/kampusmerdeka.ri?igshid=MWZjMTM2ODFkZg=="
+                        class="contact-link">nadia</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <!-- Anggota 6 -->
+            <li>
+              <div class="team-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/team4.jpg" alt="Experience The Great Holiday On Beach" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">krisna???</h3>
+
+                  <p class="card-text">
+                    Saya adalah seorang profesional di bidang Teknik Informatika dengan latar belakang pendidikan
+                    sarjana. Selama lima tahun terakhir, saya telah mendedikasikan diri untuk dunia pengembangan
+                    perangkat lunak di perusahaan IT terkemuka.
+
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+                        <p class="text">Universitas ???</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="card-position">
+                  <div class="wrapper">
+                    <p class="reviews">ca</p>
+                  </div>
+
+                  <ul>
+                    <li class="contact-item">
+                      <ion-icon name="logo-whatsapp"></ion-icon>
+                      <a href="https://wa.me/6285377555383" class="contact-link">+6285377555383</a>
+                    </li>
+
+                    <li class="contact-item">
+                      <ion-icon name="mail-outline"></ion-icon>
+                      <a href="mailto:kampusmerdeka.kemdikbud.go.id"
+                        class="contact-link">kampusmerdeka.kemdikbud.go.id</a>
+                    </li>
+
+                    <li class="contact-item">
+                      <ion-icon name="logo-instagram"></ion-icon>
+                      <a href="https://instagram.com/kampusmerdeka.ri?igshid=MWZjMTM2ODFkZg=="
+                        class="contact-link">krina</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 
+        - #GALLERY
+      -->
+
+      <section class="gallery" id="gallery">
+        <div class="container">
+
+          <p class="section-subtitle">testimonial photo</p>
+
+          <h2 class="h2 section-title">photos from customers</h2>
+
+          <p class="section-text">
+            The following are some testimonials from our customers
+            regarding the services we offer,
+            and all customers are satisfied and give the best ratings
+          </p>
+
+          <!-- popup -->
+          <div class="popup">
+            <!-- top bar -->
+            <div class="top-bar">
+              <p class="image-name">img1.png</p>
+              <span class="close-btn"></span>
+            </div>
+            <!-- arrows -->
+            <button class="arrow-btn left-arrow"><img src="assets/images/arrow.png" alt=""></button>
+            <button class="arrow-btn right-arrow"><img src="assets/images/arrow.png" alt=""></button>
+            <!-- image -->
+            <img src="assets/images/testi1.jpeg" class="large-image" alt="">
+            <!-- image-index -->
+            <h1 class="index">01</h1>
+          </div>
+
+          <div class="galleryyy">
+            <div class="galleryy-image">
+              <img src="assets/images/testi1.jpeg" alt="" class="imagess">
+            </div>
+            <div class="galleryy-image">
+              <img src="assets/images/testi2.jpeg" alt="" class="imagess">
+            </div>
+            <div class="galleryy-image">
+              <img src="assets/images/testi3.jpeg" alt="" class="imagess">
+            </div>
+            <div class="galleryy-image">
+              <img src="assets/images/testi1.jpeg" alt="" class="imagess">
+            </div>
+            <div class="galleryy-image">
+              <img src="assets/images/testi2.jpeg" alt="" class="imagess">
+            </div>
+            <div class="galleryy-image">
+              <img src="assets/images/testi3.jpeg" alt="" class="imagess">
+            </div>
+          </div>
+      </section>
+
+      <!-- 
+        - #CTA
+      -->
+      <section class="cta" id="contact">
+        <div class="container">
+          <div class="cta-content">
+            <p class="section-subtitle">Our Action</p>
+
+            <h2 class="h2 section-title">The fastest way to ship with Go-Ship</h2>
+
+            <p class="section-text">
+              "Optimize your shipping with Go-Ship! We are experts in postage
+              checks and receipt checks for efficient shipping. Find time and cost-saving
+              solutions with our trusted service. Simple, accurate and
+              reliable –Go-Ship is the best choice for your logistics needs You!"
+            </p>
+          </div>
+          <button class="btn btn-secondary" onclick="scrollToFooter()">Contact Us!</button>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logoGoship.jpeg" alt="Goship logo">
+          </a>
+
+          <p class="footer-text">
+            The fastest way to ship with Go-Ship
+          </p>
+
+        </div>
+        <div class="footer-contact">
+          <h4 class="contact-title">Contact Us</h4>
+
+          <p class="contact-text">
+            Feel free to contact and reach us !!
+          </p>
+
+          <ul>
+            <li class="contact-item">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+              <a href="https://wa.me/6285377555383" class="contact-link">+6285377555383</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="mail-outline"></ion-icon>
+              <a href="mailto:kampusmerdeka.kemdikbud.go.id" class="contact-link">kampusmerdeka.kemdikbud.go.id</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="location-outline"></ion-icon>
+              <a href="https://maps.app.goo.gl/csHVkUnwxrYVWKpQ6" class="contact-link" target="_blank">
+                Jl. Antapani Lama, Cicaheum, Kec. Regol, Kota Bandung, Jawa Barat 40282
+              </a>
+            </li>
+
+          </ul>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.7384720279974!2d107.60450487484518!3d-6.921835467749133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e89dbe0ec231%3A0x177412aac90cd065!2sAlun-Alun%20Bandung!5e0!3m2!1sen!2sid!4v1696339113295!5m2!1sen!2sid"
+          width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 <a href="">Group22</a>. Team K Section Balikpapan
+        </p>
+
+        <ul class="footer-bottom-list">
+          <li>
+            <a href="#" class="footer-bottom-link">Home</a>
+          </li>
+          <li>
+            <a href="#servicesss" class="footer-bottom-link">Services</a>
+          </li>
+          <li>
+            <a href="#contact" class="footer-bottom-link">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
