@@ -72,7 +72,7 @@ images.forEach((item, i) => {
 const updateImage = (i) => {
     let path = `assets/images/testi${i+1}.jpeg`;
     largeImage.src = path;
-    imageName.innerHTML = `assets/images/testi${i+1}.jpeg`;
+    imageName.innerHTML = `Testimoni${i+1}.jpeg`;
     imageIndex.innerHTML = `0${i+1}`;
     index = i;
 }
@@ -104,9 +104,9 @@ function closePopup(){
 }
 
 function redirectToWhatsApp() {
-  window.location.href = "https://wa.me/6285377955384";
+  window.location.href = "https://chat.whatsapp.com/GHGDV2mrjAYG62nJKyA2bR";
 }
 
-function scrollToFooter() {
-  document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+function redirectToInstagram() {
+  window.location.href = "https://www.instagram.com/revou_id/";
 }

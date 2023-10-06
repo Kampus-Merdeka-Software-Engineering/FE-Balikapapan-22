@@ -125,10 +125,14 @@ body {
 
 .container {
   padding-inline: 15px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
 }
 
 .btn {
   color: var(--white);
+  width: 150px;
   text-transform: uppercase;
   font-size: var(--fs-5);
   border-radius: 100px;
@@ -606,6 +610,7 @@ body {
 
 .team-card .card-banner {
   height: 250px;
+
 }
 
 .team-card .card-banner img {
@@ -730,7 +735,7 @@ body {
 
 /* popup more info */
 .popupcontainer {
-  width: 1500px;
+  width: 80%;
   background: #fff;
   border-radius: 6px;
   position: fixed;
@@ -741,6 +746,7 @@ body {
   padding: 0 30px 30px;
   color: #333;
   visibility: hidden;
+  z-index: 5;
 }
 
 .popupcontainer img {
@@ -748,6 +754,7 @@ body {
   margin-top: -50px;
   border-radius: 50%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  /* z-index: 5; */
 }
 
 .popupcontainer button {
@@ -778,11 +785,13 @@ body {
   font-weight: bold;
   color:#000;
   padding: auto;
+  /* padding-bottom: 5px; */
 }
 .popupcontainer p {
   font-family: 'Arial', sans-serif;
   font-size: 15px;
   text-align: left;
+  /* padding-bottom: 5px; */
 }
 
 .open-popup {
@@ -839,7 +848,7 @@ body {
   transform: translate(-50%, -50%) scale(0);
   width: 80%;
   max-width: 1600px;
-  height: 90vh;
+  height: 80vh;
   max-height: 800px;
   border-radius: 20px;
   background: rgba(0, 0, 0, 0.75);
@@ -1209,8 +1218,9 @@ address {
    */
 
   .hero {
-    min-height: 800px;
+    height: 100vh;
     padding-top: 85px;
+    z-index: 3;
   }
 
   .hero-text {
@@ -1219,6 +1229,8 @@ address {
 
   .btn-group {
     gap: 20px;
+    height: 80%;
+    
   }
 
   /* RESI SEARCH */

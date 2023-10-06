@@ -413,6 +413,7 @@ body {
 
 .hero-title {
     margin-bottom: 20px;
+    text-shadow: 3px -3px black;
 }
 
 .hero-text {
@@ -464,13 +465,15 @@ body {
 .ongkir-search {
     background: var(--bright-navy-blue);
     padding-block: var(--section-padding);
+    
   }
   
   .ongkir-search-form .input-label {
     color: var(--white);
     font-size: var(--fs-4);
-    margin-left: 20px;
+    /* margin-left: 20px; */
     margin-bottom: 10px;
+    color: black;
   }
   
   .ongkir-search-form .input-field {
@@ -1132,6 +1135,10 @@ address {
 
     .ongkir-search-form {
         grid-template-columns: repeat(5, 1fr);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .ongkir-search .btn {

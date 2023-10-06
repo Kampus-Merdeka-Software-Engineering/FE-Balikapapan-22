@@ -413,6 +413,9 @@ body {
 
 .hero-title {
     margin-bottom: 20px;
+    text-shadow: 3px -3px black;
+    /* text-shadow: -3px 3px black; */
+    
 }
 
 .hero-text {
@@ -475,15 +478,15 @@ body {
     color: var(--black);
     font-size: var(--fs-4);
     font-weight: bold;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .resi-search-form .input-field {
     background: var(--white);
     padding: 8px 15px;
-    font-size: var(--fs-5);
+    font-size: var(--fs-5);     
     border-radius: 50px;
     width: 200px;
 }
@@ -1137,6 +1140,10 @@ address {
     /* RESI SEARCH */
 
     .resi-search-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         grid-template-columns: repeat(5, 1fr);
     }
 
