@@ -137,20 +137,34 @@
                     <source src="assets/video/bgservices.mp4" type="video/mp4">
                 </video>
                 <div class="container">
-                    <h2 class="h1 hero-title">check receipts</h2>
+                    <h2 class="h1 hero-title">check shipping costs</h2>
 
                     <p class="hero-text">
-                        Come on, let's check your delivery status easily! Use our service to check your receipt.
-                        We are ready to provide the latest and transparent information. Check your receipt now and enjoy
-                        the convenience with us!
+                        Explore shipping costs effortlessly with us! Use our service to check the latest and
+                        transparent shipping rates.
+                        Check now and experience the convenience with our reliable shipping solutions!
                     </p>
 
                     <div class="container">
-                        <form action="" class="resi-search-form">
+                        <form action="" class="ongkir-search-form">
                             <div class="input-wrapper">
-                                <label for="servicesss" class="input-label">Receipt Number*</label>
-                                <input type="text" name="servicesss" id="servicesss" required
-                                    placeholder="masukkan resi" class="input-field">
+                                <label for="servicesss" class="input-label">Asal*</label>
+                                <select name="servicesss" id="servicesss" required class="input-field">
+                                    <option value="">Masukkan Kota/Kab Asal</option>
+                                    <option value="Asal A">Jakarta</option>
+                                    <option value="Asal B">Bandung</option>
+                                    <option value="Asal C">Semarang</option>
+                                </select>
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="servicesss" class="input-label">Tujuan*</label>
+                                <select name="servicesss" id="servicesss" required class="input-field">
+                                    <option value="">Masukkan Kota/Kab Tujuan</option>
+                                    <option value="Asal A">Jakarta</option>
+                                    <option value="Asal B">Bandung</option>
+                                    <option value="Asal C">Semarang</option>
+                                </select>
                             </div>
 
                             <button type="submit" class="btn btn-secondary">check</button>
@@ -246,7 +260,7 @@
                         <a href="#" class="footer-bottom-link">Home</a>
                     </li>
                     <li>
-                        <a href="#index.html#servicesss" class="footer-bottom-link">Services</a>
+                        <a href="index.html#servicesss" class="footer-bottom-link">Services</a>
                     </li>
                     <li>
                         <a href="#contact" class="footer-bottom-link">FAQ</a>
