@@ -149,6 +149,7 @@ body {
 
 .btn-secondary {
   border-color: var(--white);
+  padding: 8px 16px;
 }
 
 .btn-secondary:is(:hover, :focus) {
@@ -431,22 +432,24 @@ body {
 /* RESI SEARCH */
 
 .resi-search {
-  background: var(--bright-navy-blue);
-  padding-block: var(--section-padding);
+  display: flex;
+  flex-direction: row; 
 }
 
 .resi-search-form .input-label {
   color: var(--white);
   font-size: var(--fs-4);
   margin-left: 20px;
-  margin-bottom: 10px;
+  display: block;
+  margin-bottom: 5px;
 }
 
 .resi-search-form .input-field {
   background: var(--white);
-  padding: 10px 15px;
+  padding: 8px 15px;
   font-size: var(--fs-5);
   border-radius: 50px;
+  width: 200px;
 }
 
 .resi-search-form .input-field::placeholder {
@@ -831,18 +834,19 @@ body {
 .galleryy-image {
   width: 30%;
   height: calc(50% - 20px);
-  min-width: 300px;
-  min-height: 200px;
+  min-width: 100%;
+  min-height: 100%;
   margin: 10px;
   overflow: hidden;
   position: relative;
   overflow: hidden;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .image {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   transition: 1s;
   display: block;
