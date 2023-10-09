@@ -129,6 +129,7 @@ body {
 
 .btn {
     color: var(--white);
+    width: 150px;
     text-transform: uppercase;
     font-size: var(--fs-5);
     border-radius: 100px;
@@ -465,43 +466,43 @@ body {
 .ongkir-search {
     background: var(--bright-navy-blue);
     padding-block: var(--section-padding);
-    
-  }
-  
-  .ongkir-search-form .input-label {
+
+}
+
+.ongkir-search-form .input-label {
     color: var(--white);
     font-size: var(--fs-4);
     /* margin-left: 20px; */
     margin-bottom: 10px;
     color: black;
-  }
-  
-  .ongkir-search-form .input-field {
+}
+
+.ongkir-search-form .input-field {
     background: var(--white);
     padding: 10px 15px;
     font-size: var(--fs-5);
     border-radius: 50px;
-  }
-  
-  .ongkir-search-form .input-field::placeholder {
+}
+
+.ongkir-search-form .input-field::placeholder {
     color: var(--spanish-gray);
-  }
-  
-  .ongkir-search-form .input-field::-webkit-datetime-edit {
+}
+
+.ongkir-search-form .input-field::-webkit-datetime-edit {
     color: var(--spanish-gray);
     text-transform: uppercase;
-  }
-  
-  .ongkir-search-form .input-wrapper {
+}
+
+.ongkir-search-form .input-wrapper {
     margin-bottom: 15px;
-  }
-  
-  .ongkir-search .btn {
+}
+
+.ongkir-search .btn {
     width: 100%;
     --border-width: 1px;
     font-weight: var(--fw-600);
     margin-top: 35px;
-  }
+}
 
 /*-----------------------------------*\
    * ##BAGIAN SLOGAN DAN CTA
@@ -527,23 +528,30 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    max-width: 600px;
-  }
+    width: 220px;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 8px 1px black; */
+    border-style: solid;
+}
 
-  .suggestion-box {
+.suggestion-box {
     margin-top: 20px;
     text-align: center;
     padding: 20px;
     color: white;
-  }
+}
 
-  .suggestion-box label,
-  .suggestion-box textarea,
-  .suggestion-box button {
+.suggestion-box label,
+.suggestion-box textarea,
+.suggestion-box button {
     margin-bottom: 10px;
-  }
+}
 
-
+#suggestion {
+    border-radius: 5px;
+}
 
 /*-----------------------------------*\
    * #FOOTER
