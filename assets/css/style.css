@@ -443,12 +443,15 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Untuk memastikan video mengisi seluruh area */
+  object-fit: cover;
+  /* Untuk memastikan video mengisi seluruh area */
 }
 
 .container {
-  position: relative; /* Penting untuk menjaga konten di atas video */
-  z-index: 1; /* Memastikan konten di atas video */
+  position: relative;
+  /* Penting untuk menjaga konten di atas video */
+  z-index: 1;
+  /* Memastikan konten di atas video */
 }
 
 
@@ -456,7 +459,7 @@ body {
 
 .resi-search {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
 }
 
 .resi-search-form .input-label {
@@ -761,7 +764,7 @@ body {
   width: 100%;
   margin-top: 50px;
   padding: 10px 0;
-  background:#56e30a;
+  background: #56e30a;
   color: #fff;
   border: 0;
   outline: none;
@@ -783,10 +786,11 @@ body {
   font-family: 'Helvetica', sans-serif;
   font-size: 18px;
   font-weight: bold;
-  color:#000;
+  color: #000;
   padding: auto;
   /* padding-bottom: 5px; */
 }
+
 .popupcontainer p {
   font-family: 'Arial', sans-serif;
   font-size: 15px;
@@ -844,7 +848,7 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  margin-top: 50px; 
+  margin-top: 50px;
   transform: translate(-50%, -50%) scale(0);
   width: 80%;
   max-width: 1600px;
@@ -1230,7 +1234,7 @@ address {
   .btn-group {
     gap: 20px;
     height: 80%;
-    
+
   }
 
   /* RESI SEARCH */
@@ -1455,6 +1459,10 @@ address {
     align-items: center;
   }
 
+  .cta .container .suggestion-box{
+    font-size: medium;
+  }
+
   .cta-content {
     width: calc(100% - 225px);
   }
@@ -1463,7 +1471,28 @@ address {
     margin-inline: 0;
   }
 
+  .suggestion-box {
+    text-align: center;
+    font-style: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 600px;
+  }
 
+  .suggestion-box {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    color: white;
+  }
+
+  .suggestion-box label,
+  .suggestion-box textarea,
+  .suggestion-box button {
+    margin-bottom: 10px;
+  }
 
   /**
    * FOOTER

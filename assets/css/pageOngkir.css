@@ -520,6 +520,31 @@ body {
     font-size: var(--fs-5);
 }
 
+.suggestion-box {
+    text-align: center;
+    font-style: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+
+  .suggestion-box {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    color: white;
+  }
+
+  .suggestion-box label,
+  .suggestion-box textarea,
+  .suggestion-box button {
+    margin-bottom: 10px;
+  }
+
+
+
 /*-----------------------------------*\
    * #FOOTER
   \*-----------------------------------*/
