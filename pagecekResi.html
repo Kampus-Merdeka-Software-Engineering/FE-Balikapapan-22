@@ -142,14 +142,14 @@
                     </p>
 
                     <div class="container">
-                        <form action="" class="resi-search-form">
+                        <form class="resi-search-form">
                             <div class="input-wrapper">
                                 <label for="servicesss" class="input-label">Receipt Number</label>
-                                <input type="text" name="servicesss" id="servicesss" required
+                                <input type="text" name="servicesss" id="shipmentId" required
                                     placeholder="Enter your receipt" class="input-field">
                             </div>
 
-                            <button type="submit" class="btn btn-secondary">check</button>
+                            <button type="button" class="btn btn-secondary" onclick="fetchShipmentById()">check</button>
                         </form>
                     </div>
                 </div>
