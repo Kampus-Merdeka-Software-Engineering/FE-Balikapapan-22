@@ -3,40 +3,57 @@ const baseURL = "https://angry-gray-outerwear.cyclic.app"
 
 // cek resi
 async function fetchShipmentById() {
+    const shipmentId = document.getElementById('shipmentId').value;
     try {
-        const status = document.getElementById('shipmentId').value;
-        const data = await shipment.json();
-        const shipmentId = document.getElementById('shipmentId');
-        shipmentId.innerHTML = '';
-
-        data.forEach((shipmentId) => {
-            const listItem = document.createElement('li');
-            listItem.textContent = `${status}`;
-            shipmentID.appendChild(listItem);
-          });
-
+        const response = await fetch(`${baseURL}/shipmentId`);
+        const shipment = await response.json();
+        const shipmentStatus = console.log("otw"); //document.getElementById('id tempat status muncul');
+        shipmentStatus.innerHTML = `Status : ${shipment.status}`;
     } catch(error) {
-        console.error(error);
+        console.error('error fetching shipment:', error);
     }
 }
 
 fetchShipmentById()
 
-// cek ongkir
+
+// kirim saran
+
+async function submitSuggestion() {
+    const suggestion = document.getElementById('suggestion').value;
+    try {        
+        const response = await fetch(`${baseURL}/review`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ suggestion })
+        });
+        const data = await response.json();
+
+
+    } catch (error) {
+        console.error("Error adding review:", error);
+    }
+}
+
+submitSuggestion()
+
+// cek ongkir 
 
 async function fetchOngkir() {
+    const origin = document.getElementById('servicesss').value;
+    const destination = document.getElementById('servicesss').value;
     try {
-        const origin = document.getElementById('servicesss').value;
-        const destination = document.getElementById('servicesss').value;
-        const price = await fetch(`${baseURL}/price?origin=${servicesss}&destination=${servicesss}`);
+        const response = await fetch(`${baseURL}/price?origin=${servicesss}&destination=${servicesss}`);
         const data = await price.json();
-        const servicesss = document.getElementById('servicess');
-        servicesssId.innerHTML = '';
+        const ongkirList = document.getElementById('id tempat keluar harga');
+        ongkirList.innerHTML = '';
 
-        data.forEach((servicesss) => {
+        data.forEach(ongkirList => {
             const listItem = document.createElement('li');
             listItem.textContent = `${price}`;
-            servicesss.appendChild(listItem);
+            ongkirList.appendChild(listItem);
           });
 
     } catch (error) {
@@ -45,26 +62,3 @@ async function fetchOngkir() {
 }
 
 fetchOngkir()
-
-// kirim review
-
-async function submitSuggestion() {
-    try {
-        const message = document.getElementById('suggestion').value;
-        
-        const response = await fetch(`${baseURL}/review`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({review})
-        });
-        const data = await response.json();
-
-
-    } catch (error) {
-        console.error(error)
-    }
-}
-
-submitSuggestion()
