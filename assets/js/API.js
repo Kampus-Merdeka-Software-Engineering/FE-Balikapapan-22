@@ -18,7 +18,7 @@ async function fetchShipmentById() {
 // kirim saran
 
 async function submitSuggestion() {
-    const suggestion = document.getElementById('suggestion').value;
+    const review = document.getElementById('suggestion').value;
 
     try {
         const response = await fetch(`${baseURL}/review`, {
@@ -26,7 +26,7 @@ async function submitSuggestion() {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ suggestion })
+            body: JSON.stringify({ review })
         });
 
         if (!response.ok) {
