@@ -1,7 +1,7 @@
-// Bagian BE 
+// Bagian BE dan proses menyambungkan ke FE
 const baseURL = "https://angry-gray-outerwear.cyclic.app/api"
 
-// cek resi
+// Bagian untuk menjalankan fungsi mengecek resi 
 async function fetchShipmentById() {
     const shipmentId = document.getElementById('shipmentId').value;
     try {
@@ -9,14 +9,12 @@ async function fetchShipmentById() {
         const shipment = await response.json();
         const shipmentStatus = document.getElementById('resultContainer');
         shipmentStatus.innerHTML = `<p id="status">status: ${shipment.data.status}</p>`;
-    } catch(error) {
+    } catch (error) {
         console.error('error fetching shipment:', error);
     }
 }
 
-
-// kirim saran
-
+// Bagian untuk menjalankan fungsi memberikan saran
 async function submitSuggestion() {
     const review = document.getElementById('suggestion').value;
 
@@ -45,14 +43,11 @@ async function submitSuggestion() {
         console.log('Saran terkirim dengan sukses:', data);
 
     } catch (error) {
-        console.error("Error mengirim saran:", error);
-    }
+        console.error("Error mengirim saran:", error);
+    }
 }
 
-
-
-// cek ongkir 
-
+// Bagian untuk menjalankan fungsi mengecek ongkir
 async function fetchOngkir() {
     const origin = document.getElementById('origin-input').value;
     const destination = document.getElementById('destination-input').value;

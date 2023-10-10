@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * navbar toggle
+ * Bagian Navbar
  */
 
 const overlay = document.querySelector("[data-overlay]");
@@ -25,7 +25,7 @@ navToggleEvent(navElemArr);
 navToggleEvent(navLinks);
 
 /**
- * header sticky & go to top
+ *Bagian Header dan untuk bagian go to top
  */
 
 const header = document.querySelector("[data-header]");
@@ -44,13 +44,14 @@ window.addEventListener("scroll", function () {
 });
 
 function redirectToMoreInfo() {
-  // Ganti URL dengan halaman tujuan yang sesuai
   window.location.href = 'more_info_page.html';
 }
 
 const images = [...document.querySelectorAll('.imagess')];
 
-// popup
+/**
+ *Bagian popup
+ */
 
 const popup = document.querySelector('.popup');
 const closeBtn = document.querySelector('.close-btn');
@@ -60,46 +61,46 @@ const imageIndex = document.querySelector('.index');
 const leftArrow = document.querySelector('.left-arrow');
 const rightArrow = document.querySelector('.right-arrow');
 
-let index = 0; // will track our current image;
+let index = 0;
 
 images.forEach((item, i) => {
-    item.addEventListener('click', () => {
-        updateImage(i);
-        popup.classList.toggle('active');
-    })
+  item.addEventListener('click', () => {
+    updateImage(i);
+    popup.classList.toggle('active');
+  })
 })
 
 const updateImage = (i) => {
-    let path = `assets/images/testi${i+1}.jpeg`;
-    largeImage.src = path;
-    imageName.innerHTML = `Testimoni${i+1}.jpeg`;
-    imageIndex.innerHTML = `0${i+1}`;
-    index = i;
+  let path = `assets/images/testi${i + 1}.jpeg`;
+  largeImage.src = path;
+  imageName.innerHTML = `Testimoni${i + 1}.jpeg`;
+  imageIndex.innerHTML = `0${i + 1}`;
+  index = i;
 }
 
 closeBtn.addEventListener('click', () => {
-    popup.classList.toggle('active');
+  popup.classList.toggle('active');
 })
 
 leftArrow.addEventListener('click', () => {
-    if(index > 0){
-        updateImage(index - 1);
-    }
+  if (index > 0) {
+    updateImage(index - 1);
+  }
 })
 
 rightArrow.addEventListener('click', () => {
-    if(index < images.length - 1){
-        updateImage(index + 1);
-    }
+  if (index < images.length - 1) {
+    updateImage(index + 1);
+  }
 })
 
 let popupcontainer = document.getElementById('popupmore');
 
-function openPopup(){
+function openPopup() {
   popupcontainer.classList.add("open-popup");
 }
 
-function closePopup(){
+function closePopup() {
   popupcontainer.classList.remove("open-popup");
 }
 

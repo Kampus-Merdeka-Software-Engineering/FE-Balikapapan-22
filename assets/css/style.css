@@ -449,11 +449,8 @@ body {
 
 .container {
   position: relative;
-  /* Penting untuk menjaga konten di atas video */
   z-index: 1;
-  /* Memastikan konten di atas video */
 }
-
 
 /* RESI SEARCH */
 
@@ -788,14 +785,12 @@ body {
   font-weight: bold;
   color: #000;
   padding: auto;
-  /* padding-bottom: 5px; */
 }
 
 .popupcontainer p {
   font-family: 'Arial', sans-serif;
   font-size: 15px;
   text-align: left;
-  /* padding-bottom: 5px; */
 }
 
 .open-popup {
@@ -815,9 +810,7 @@ body {
   align-items: center;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* Membuat 3 kolom dengan lebar yang sama */
   gap: 10px;
-  /* Jarak antar elemen */
   margin: auto;
 }
 
@@ -843,7 +836,6 @@ body {
 }
 
 /* popup dan untuk galerry*/
-
 .popup {
   position: fixed;
   top: 50%;
@@ -945,7 +937,6 @@ body {
 }
 
 .large-image {
-  /* margin-top: 5%; */
   width: 80%;
   height: 80%;
   object-fit: contain;
@@ -1185,8 +1176,6 @@ address {
     --fs-5: 15px;
   }
 
-
-
   /**
    * HEADER
    */
@@ -1281,7 +1270,6 @@ address {
     margin-top: 20px;
   }
 
-
   /**
    * POPULAR
    */
@@ -1289,8 +1277,6 @@ address {
   .popular-card .card-content {
     right: auto;
   }
-
-
 
   /**
    * FOOTER
@@ -1320,10 +1306,6 @@ address {
 
 }
 
-
-
-
-
 /**
  * responsive for larger than 768px screen
  */
@@ -1344,8 +1326,6 @@ address {
 
   }
 
-
-
   /**
    * REUSED STYLE
    */
@@ -1358,8 +1338,6 @@ address {
     max-width: 60ch;
     margin-inline: auto;
   }
-
-
 
   /**
    * HEADER
@@ -1382,8 +1360,6 @@ address {
     gap: 10px;
   }
 
-
-
   /**
    * POPULAR
    */
@@ -1402,8 +1378,6 @@ address {
   .popular-card .card-content {
     right: 20px;
   }
-
-
 
   /**
    * PACKAGE
@@ -1439,7 +1413,6 @@ address {
     margin-bottom: 15px;
   }
 
-
   /**
    * GALLERY
    */
@@ -1447,7 +1420,6 @@ address {
   .gallery {
     padding-bottom: calc(var(--section-padding * 2));
   }
-
 
   /**
    * #BAGIAN SLOGAN DAN CTA
@@ -1524,10 +1496,6 @@ address {
 
 }
 
-
-
-
-
 /**
  * responsive for larger than 992px screen
  */
@@ -1541,8 +1509,6 @@ address {
   .container {
     max-width: 1050px;
   }
-
-
 
   /**
    * HEADER
@@ -1617,8 +1583,6 @@ address {
     display: none;
   }
 
-
-
   /**
    * HERO
    */
@@ -1651,7 +1615,6 @@ address {
     margin-top: 0;
   }
 
-
   /**
    * POPULAR
    */
@@ -1659,8 +1622,6 @@ address {
   .popular-list {
     grid-template-columns: repeat(3, 1fr);
   }
-
-
 
   /**
    * PACKAGE
@@ -1673,8 +1634,6 @@ address {
   .meta-box>ion-icon {
     font-size: 15px;
   }
-
-
 
   /**
    * #BAGIAN SLOGAN DAN CTA
