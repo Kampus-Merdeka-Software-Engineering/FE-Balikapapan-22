@@ -4,7 +4,7 @@ const baseURL = "https://angry-gray-outerwear.cyclic.app"
 // cek resi
 async function fetchShipmentById() {
     try {
-        const status = await fetch(`${baseURL}/shipment/${shipmentId}`);
+        const status = document.getElementById('shipmentId').value;
         const data = await shipment.json();
         const shipmentId = document.getElementById('shipmentId');
         shipmentId.innerHTML = '';
