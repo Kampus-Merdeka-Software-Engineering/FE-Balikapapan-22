@@ -1,10 +1,10 @@
 // Bagian BE 
-const baseURL = "be-balikpapan-22-production.up.railway.app"
+const baseURL = "https://angry-gray-outerwear.cyclic.app"
 
 // cek resi
 async function fetchShipmentById() {
     try {
-        const status = await fetch(`${baseURL}/shipment`);
+        const status = await fetch(`${baseURL}/shipment/${shipmentId}`);
         const data = await shipment.json();
         const shipmentId = document.getElementById('shipmentId');
         shipmentId.innerHTML = '';
@@ -28,9 +28,10 @@ async function fetchOngkir() {
     try {
         const origin = document.getElementById('servicesss').value;
         const destination = document.getElementById('servicesss').value;
-        const price = await fetch(`${baseURL}/price?origin=${asal}&destination=${tujuan}`);
+        const price = await fetch(`${baseURL}/price?origin=${servicesss}&destination=${servicesss}`);
         const data = await price.json();
         const servicesss = document.getElementById('servicess');
+        servicesssId.innerHTML = '';
 
         data.forEach((servicesss) => {
             const listItem = document.createElement('li');
