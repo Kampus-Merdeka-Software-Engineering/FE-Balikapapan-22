@@ -142,29 +142,32 @@
                     </p>
 
                     <div class="container">
-                        <form action="" class="ongkir-search-form">
+                        <form class="ongkir-search-form">
                             <div class="input-wrapper">
                                 <label for="servicesss" class="input-label"><b>Origin</b></label>
-                                <select name="servicesss" id="servicesss" required class="input-field">
+                                <select name="servicesss" id="origin-input" required class="input-field">
                                     <option value="">Enter your City/Regency of Origin</option>
-                                    <option value="Asal A">Jakarta</option>
-                                    <option value="Asal B">Bandung</option>
-                                    <option value="Asal C">Semarang</option>
+                                    <option value="Jakarta">Jakarta</option>
+                                    <option value="Bandung">Bandung</option>
+                                    <option value="Semarang">Semarang</option>
                                 </select>
                             </div>
 
                             <div class="input-wrapper">
                                 <label for="servicesss" class="input-label"><b>Destination</b></label>
-                                <select name="servicesss" id="servicesss" required class="input-field">
+                                <select name="servicesss" id="destination-input" required class="input-field">
                                     <option value="">Enter the Destination City/Regency</option>
-                                    <option value="Asal A">Jakarta</option>
-                                    <option value="Asal B">Bandung</option>
-                                    <option value="Asal C">Semarang</option>
+                                    <option value="Jakarta">Jakarta</option>
+                                    <option value="Bandung">Bandung</option>
+                                    <option value="Semarang">Semarang</option>
                                 </select>
                             </div>
 
-                            <button type="submit" class="btn btn-secondary" onclick="fetchOngkir()">check</button>
+                            <button type="button" class="btn btn-secondary" onclick="fetchOngkir()">check</button>
                         </form>
+                    </div>
+                    <div class="result-container" id="resultPrice">
+                        
                     </div>
                 </div>
             </section>
@@ -286,6 +289,7 @@
     - custom js link
   -->
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/API.js"></script>
 
     <!-- 
     - ionicon link
